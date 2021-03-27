@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,12 +11,14 @@ namespace AtelierN1
         private string nom;
         private string prenom;
         private string adresse;
+        private List<Compte> comptes;
 
         public Client(string n,string p,string a )
         {
             nom = n;
             prenom = p;
             adresse = a;
+            comptes = new List<Compte>();
         }
         public void afficher()
         {
